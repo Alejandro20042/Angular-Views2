@@ -1,0 +1,153 @@
+/* CSS */
+/* styles.css */
+
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.menu-btn {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 100px;
+ 
+  
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.menu-items li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.menu-lateral {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 200px; /* O el ancho que desees para tu menú lateral */
+  height: 100vh; 
+  position: fixed; 
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text img {
+  margin-right: 10px;
+}
+
+
+.cerrar-sesion {
+  position: absolute;
+  bottom: 60px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+  left: 0px; /* Ajusta la distancia desde el borde izquierdo según sea necesario */
+  width: calc(100% - 40px); /* Ancho igual al 100% del contenedor menos el padding izquierdo y derecho */
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+ 
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.camera-interface {
+    background-color: white;
+    width: 90%;
+    height: 120vh;
+    display: flex; /* Cambiar a flex */
+    flex-direction: column; /* Cambiar a column */
+    align-items: flex-end; /* Alinear a la derecha */
+    justify-content: space-evenly; /* Distribuir espacio uniformemente */
+    padding: 20px;
+  }
+  
+  .display-box {
+    width: 70%; /* Reducir el ancho aquí */
+    height: 50%; /* Reducir el alto aquí */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  
+  .display-box img {
+    width: 40%;
+    height: 60%;
+  }
+  
+  .button-group {
+    width: 50%; /* Ajustar el ancho aquí */
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+  }
+  
+  .btn {
+    width: 45%;
+    padding: 1rem;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+  
