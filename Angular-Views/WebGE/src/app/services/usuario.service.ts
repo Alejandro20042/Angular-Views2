@@ -15,14 +15,11 @@ export class UsuarioService {
 
   constructor(private http:HttpClient) {}
 
-    RegistroUsuario(correo: string, contra: string): Observable<any>{
-      const nuevoUsuario = {correo, contra};
-      return this.http.post<any>(`${enviroment.apiUrl}/Usuario/`, nuevoUsuario)
-
-    }
-    registrar(registroDatos: RegistroModel): Observable<any>{
-      return this.http.post<any>(`${enviroment.apiUrl}/Usuario/register`, registroDatos)
-    }
+  RegistroUsuario(correo: string, contraseña: string): Observable<any> {
+    const nuevoUsuario = { correo, contraseña };
+    return this.http.post<any>(`${enviroment.apiUrl}/Usuario/`, nuevoUsuario);
+  }
+   
 
     login(loginDatos: LoginModel): Observable<any>{
       return this.http.post<any>(`${enviroment.apiUrl}/Usuario/login`, loginDatos);

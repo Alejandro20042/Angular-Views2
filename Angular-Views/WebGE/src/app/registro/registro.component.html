@@ -1,4 +1,73 @@
 
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .form-container {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .form-label {
+            color: #1da1f2;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .form-input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .button {
+            background-color: #064686;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #053863;
+        }
+    </style>
+
+<div class="contenedor">
     <div class="container">
         <h1 class="title">Regístrate</h1>
         <p class="subtitle">Mantén segura tu propiedad!</p>
@@ -10,4 +79,5 @@
             <button class="button" (click)="RegistrarUsuario()">Registrarse</button>
         </form>
     </div>
+</div>
 
