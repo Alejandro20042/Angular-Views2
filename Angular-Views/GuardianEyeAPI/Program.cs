@@ -28,8 +28,12 @@ namespace GuardianEyeAPI
             builder.Services.AddScoped<CamaraServices>();
             builder.Services.AddSingleton<NotificacionServices>();
             builder.Services.AddSingleton<ImagenServices>();
+            
+            builder.Services.AddCors(options => options.AddPolicy("AngularClient",policy =>{
+                policy.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+            }));
 
-            // Configuración de autenticación
+            // Configuraciï¿½n de autenticaciï¿½n
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -59,12 +63,14 @@ namespace GuardianEyeAPI
 
             app.UseHttpsRedirection();
 
-            app.UseAuthentication(); // Asegúrate de llamar a UseAuthentication antes de UseAuthorization
+            app.UseAuthentication(); // Asegï¿½rate de llamar a UseAuthentication antes de UseAuthorization
 
             app.UseAuthorization();
 
 
             app.MapControllers();
+
+            app.UseCors("AngularClient");
 
             app.Run();
         }

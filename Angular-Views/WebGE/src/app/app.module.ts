@@ -21,7 +21,6 @@ import { FormsModule } from '@angular/forms';
     CambioContraComponent,
     IngresarCodigoComponent,
     IngresarCorreoComponent,
-    RegistroComponent,
     HomeInicioComponent,
     HomeInicioComponent,
     CamaraViewComponent,

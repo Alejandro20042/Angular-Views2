@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { LoginModel, UsuarioModel } from '../models/usuario-model';
+import { LoginModel, RegistroModel, UsuarioModel } from '../models/usuario-model';
 import { Observable } from 'rxjs';
 import { enviroment } from '../../enviroments/enviroment';
 
@@ -17,9 +17,13 @@ export class UsuarioService {
 
     RegistroUsuario(correo: string, contra: string): Observable<any>{
       const nuevoUsuario = {correo, contra};
-      return this.http.post<any>(`${enviroment.apiUrl}/registro`, nuevoUsuario)
+      return this.http.post<any>(`${enviroment.apiUrl}/Usuario/`, nuevoUsuario)
 
     }
+    registrar(registroDatos: RegistroModel): Observable<any>{
+      return this.http.post<any>(`${enviroment.apiUrl}/Usuario/register`, registroDatos)
+    }
+
     login(loginDatos: LoginModel): Observable<any>{
       return this.http.post<any>(`${enviroment.apiUrl}/Usuario/login`, loginDatos);
     }

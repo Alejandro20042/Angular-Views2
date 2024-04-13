@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { UsuarioService } from '../services/usuario.service';
-import { response } from 'express';
 import { LoginModel, UsuarioModel } from '../models/usuario-model';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -36,8 +35,7 @@ export class InicioSesionComponent {
       correo: this.loginForm.get('correo')?.value,
       contraseña: this.loginForm.get('contra')?.value
     }
-    console.log(loginDatos.contraseña.toString())
-    console.log(loginDatos.correo.toString())
+  
     if(!loginDatos.correo || !loginDatos.contraseña){
 
       this.mensajeError = "Porfavor Ingresa correo y contraseña";
