@@ -11,20 +11,24 @@ export class CamaraService {
 
   constructor(private http:HttpClient) { }
 
+  CrearCamara(camara: CamaraModel): Observable<any> {
+    return this.http.post<any>(`${enviroment.apiUrl}/camara`, camara);
+
+  }
   ObtenerCamaraPorId(id: string): Observable<CamaraModel>{
     return this.http.get<CamaraModel>(`${enviroment.apiUrl}/${id}`)
 
   }
   ObtenerCamaras(): Observable<CamaraModel[]>{
-    return this.http.get<CamaraModel[]>(`${enviroment.apiUrl}`);
+    return this.http.get<CamaraModel[]>(`${enviroment.apiUrl}/camara`);
 
   }
   ActualizarCamara(camara: CamaraModel): Observable<any>{
-    return this.http.put<any>(`${enviroment.apiUrl}/${camara.id}`,camara);
+    return this.http.put<any>(`${enviroment.apiUrl}/camara/${camara.id}`, camara);
 
   }
   EliminarCamara(id: string): Observable<any>{
-    return this.http.delete<any>(`${enviroment.apiUrl}/${id}`);
+    return this.http.delete<any>(`${enviroment.apiUrl}/camara/${id}`);
   }
 
 }

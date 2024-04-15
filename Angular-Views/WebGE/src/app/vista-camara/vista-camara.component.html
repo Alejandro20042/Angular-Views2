@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Ubicación</th>
+        <th>Estado</th>
+        <th>Modelo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let camara of camaras">
+        <td>{{ camara.ubicacion }}</td>
+        <td>{{ camara.estado }}</td>
+        <td>{{ camara.modelo }}</td>
+        <td>
+          <button class="btn btn-primary" (click)="editarCamra(camara.id)" >Editar</button>
+          <button class="btn btn-danger" (click)="eliminarCamara(camara.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <button class="btn btn-success" (click)="agregarCamara()">Agregar Cámara</button>
+  

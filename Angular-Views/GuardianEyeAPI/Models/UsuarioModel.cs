@@ -31,9 +31,9 @@ namespace GuardianEyeAPI.Models
     public class LoginModel
     {
         [BsonElement("Correo")]
-        public string Correo { get; set; }
+        public string? Correo { get; set; }
 
         [BsonElement("Contraseña")]
-        public string Contraseña { get; set; }
+        public string? Contraseña { get; set; }
     }
 }

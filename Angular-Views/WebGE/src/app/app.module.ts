@@ -11,6 +11,9 @@ import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 import { CamaraViewComponent } from './camara-view/camara-view.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { FormsModule } from '@angular/forms';
+import { VistaCamaraComponent } from './vista-camara/vista-camara.component';
+import { AgregarCamaraComponent } from './agregar-camara/agregar-camara.component';
+import { ActualizarCamaraComponent } from './actualizar-camara/actualizar-camara.component';
 
 
 
@@ -25,6 +28,9 @@ import { FormsModule } from '@angular/forms';
     HomeInicioComponent,
     CamaraViewComponent,
     PerfilComponent,
+    VistaCamaraComponent,
+    AgregarCamaraComponent,
+    ActualizarCamaraComponent,
 
  ],
   imports: [

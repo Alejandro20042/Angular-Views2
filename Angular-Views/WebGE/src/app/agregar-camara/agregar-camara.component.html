@@ -1,0 +1,14 @@
+<div class="form-container">
+    <h2>Agregar Cámara</h2>
+    <div class="form-group">
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" class="form-control" [(ngModel)]="nuevaCamara.ubicacion" placeholder="Ingrese la ubicación de la cámara">
+    </div>
+    <div class="form-group">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" class="form-control" [(ngModel)]="nuevaCamara.estado" placeholder="Ingrese el estado de la cámara">
+    </div>
+    <button (click)="agregarCamara()" class="btn btn-success">Agregar Cámara</button>
+    <button class="btn btn-primary btn-sm" (click)="regresar()">Regresar</button>
+
+</div>

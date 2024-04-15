@@ -82,7 +82,9 @@ export class HomeInicioComponent   {
         name: 'Porcentaje',
         data: [{
           name: 'Categoría A',
-          y: 40
+          y: 40,
+          color: 
+          'red',
         }, {
           name: 'Categoría B',
           y: 30

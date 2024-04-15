@@ -10,6 +10,9 @@ import { CamaraViewComponent } from './camara-view/camara-view.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { VistaCamaraComponent } from './vista-camara/vista-camara.component';
+import { AgregarCamaraComponent } from './agregar-camara/agregar-camara.component';
+import { ActualizarCamaraComponent } from './actualizar-camara/actualizar-camara.component';
 
 
 const routes: Routes = [
@@ -20,6 +23,9 @@ const routes: Routes = [
   { path: 'home', component: HomeInicioComponent}, 
   { path: 'camara', component: CamaraViewComponent},
   { path: 'perfil', component: PerfilComponent},
+  { path: 'vistacamara', component: VistaCamaraComponent},
+  { path: 'agregarcamara', component: AgregarCamaraComponent},
+  { path: 'actulizarcamara/:id', component: ActualizarCamaraComponent},
   { path: '', redirectTo: '/inicio-sesion', pathMatch: 'full' }
   
   

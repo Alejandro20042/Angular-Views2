@@ -1,0 +1,17 @@
+<div class="form-container">
+    <h2>Actualizar Cámara</h2>
+    <div class="form-group">
+      <label for="ubicacion">Ubicación:</label>
+      <input type="text" id="ubicacion" class="form-control" [(ngModel)]="camaraSeleccionada.ubicacion" placeholder="Ingrese la ubicación de la cámara">
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" class="form-control" [(ngModel)]="camaraSeleccionada.estado" placeholder="Ingrese el estado de la cámara">
+    </div>
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" class="form-control" [(ngModel)]="camaraSeleccionada.modelo" placeholder="Ingrese el modelo de la cámara">
+    </div>
+    <button class="btn btn-success" (click)="actualizarCamara()">Actualizar Cámara</button>
+    <button class="btn btn-primary" (click)="regresar()">Regresar</button>
+</div>
