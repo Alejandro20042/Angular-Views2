@@ -30,7 +30,7 @@ export class UsuarioService {
     
     }
     ObtenerUsuario(): Observable<UsuarioModel[]>{
-      return this.http.get<UsuarioModel[]>(`${enviroment.apiUrl}`);  
+      return this.http.get<UsuarioModel[]>(`${enviroment.apiUrl}/usuario`);  
     }
 
     ActualizarUsuario(usuario: UsuarioModel): Observable<any>{

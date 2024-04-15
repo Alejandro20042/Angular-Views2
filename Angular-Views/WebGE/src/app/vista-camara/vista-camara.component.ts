@@ -59,4 +59,10 @@ export class VistaCamaraComponent implements OnInit {
         console.error('Error al intentar eliminar la cámara:', error);
       });
   }
+
+  irVistaAgregarCamara(): void{
+
+    this.router.navigate(['/agregarcamara']);
+  }
+
 }

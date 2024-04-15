@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { CambioContraComponent } from './cambio-contra/cambio-contra.component';
 import { IngresarCodigoComponent } from './ingresar-codigo/ingresar-codigo.component';
 import { IngresarCorreoComponent } from './ingresar-correo/ingresar-correo.component';
-import { RegistroComponent } from './registro/registro.component';
 import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 import { CamaraViewComponent } from './camara-view/camara-view.component';
 import { PerfilComponent } from './perfil/perfil.component';
